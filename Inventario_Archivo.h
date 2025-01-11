@@ -124,3 +124,30 @@ void Mostrar(){
     
 
 }
+
+int Contar(){
+    //Apertura del inventario.
+    FILE *archivo = fopen("(Nombre del inventario)", "r");
+
+    if (archivo == NULL){
+        printf("Error al abrir el archivo");
+        return 0;
+    }
+
+    Producto t;
+    int contador = 0;
+
+    //Proceso de contar cuantos archivos hay.
+
+    while (fscanf(archivo, "(Formato)", &t.id, t.nombre, &t.cantidad, &t.precio) == 4){
+        contador ++;
+    }
+
+    fclose(archivo);
+    return contador; 
+
+    //Así debería ir pana;
+    //int contador = ContarProductos();
+
+}
+
