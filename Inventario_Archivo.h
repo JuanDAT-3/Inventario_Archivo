@@ -112,17 +112,6 @@ void Mostrar(){
     //Cerrar de archivos.
     fclose(archivo); 
     
-
-
-
-
-
-
-
-
-
-    
-
 }
 
 int Contar(){
@@ -146,7 +135,8 @@ int Contar(){
     fclose(archivo);
     return contador; 
 
-    //Así debería ir pana;
+    //Así debería ir pana;En el principal
+    
     //int contador = ContarProductos();
 
 }
